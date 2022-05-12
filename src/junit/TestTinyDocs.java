@@ -43,7 +43,7 @@ public class TestTinyDocs
         assertTrue(ngrams.contains("fox jumps over")); 
         assertTrue(ngrams.contains("jumps over the")); 
         assertTrue(ngrams.contains("over the lazy")); 
-        assertTrue(ngrams.contains("the lazy dog")); 
+        assertTrue(ngrams.contains("the lazy dog"));
     }
     
     @Test
@@ -74,4 +74,5 @@ public class TestTinyDocs
         assertEquals(msg, 0, detector.getNumNGramsInCommon(FILE1, FILE3));
         assertEquals(msg, 0, detector.getNumNGramsInCommon(FILE3, FILE1));
     }
+    
 }
